@@ -1,0 +1,845 @@
+[0:03] Okay. Uh, welcome. I'm David Jazz
+[0:06] Meyers. Guess I'll put that somewhere
+[0:08] here.
+[0:10] David Jazz Meyers.
+[0:13] And uh this is going to be the inaugural
+[0:16] lecture of a series um on uh the
+[0:21] compositional theory of systems using
+[0:23] category theory and in particular a
+[0:26] formulation that uh uh I've come to call
+[0:29] the double operatic theory of systems
+[0:31] for reasons we'll eventually come to um
+[0:34] and this is a way of uh thinking about
+[0:37] uh coupled dynamical systems and how
+[0:40] they can be presented and how they their
+[0:43] behavior can be studied um using tools
+[0:45] of category theory uh that we're working
+[0:47] on uh jointly at the topos institute
+[0:51] right now and it's um so uh uh this is
+[0:56] uh uh builds a lot uh on the work of the
+[0:59] two founders of the topos institute
+[1:01] Brendan Fong and David Spivbec um so
+[1:04] this is work done with a large number of
+[1:06] collaborators that I've also haven't um
+[1:09] haven't written down on this page but in
+[1:10] particular um the ideas here are going
+[1:14] to be sort of downstream of ideas uh of
+[1:17] of Brendan's involving decorated
+[1:19] coastbands and uh and in particular also
+[1:22] the um the work of John Bayz and his
+[1:25] students on uh decorated and structured
+[1:28] co-spans and also David Spivvac
+[1:30] Christina Vaselopo and Patrick Schultz
+[1:33] in this paper uh on the right um called
+[1:38] dynamical systems and sheav so a lot of
+[1:40] the ideas are going to be coming from
+[1:42] there as well. But uh I'm going to try
+[1:44] and present a unified story that
+[1:46] encompasses both perspectives and which
+[1:49] uh which gives a nice um a nice sort of
+[1:53] general overview of the of the topic
+[1:55] that uh that that finds some
+[1:57] commonalities between them. Um so uh
+[2:01] there is a short extended abstract that
+[2:03] expresses some of these ideas um that I
+[2:06] wrote for ACT 2020 or 2021. Um so that's
+[2:11] that first archive there on the bottom.
+[2:13] And then the second one uh Sophie Lipkin
+[2:15] and I have put out a big uh paper um
+[2:18] getting uh the ball rolling on this and
+[2:20] we're hoping to uh follow this up with a
+[2:22] number of papers uh putting this out. So
+[2:24] this is sort of an introduc introduction
+[2:26] to the this point of view uncoupled
+[2:28] systems and in particular the
+[2:31] categorical approach to study studying
+[2:33] uh compositional systems. Um, so I
+[2:37] apologize. My nose is a little stuffy,
+[2:39] so I may be blowing it in a bit. Um, and
+[2:42] also, uh, these, uh, these lectures are
+[2:45] sort of off the cuff. They're not really
+[2:46] well prepared. Um, so I apologize if I
+[2:50] ever stumble or make some mistakes. I'll
+[2:52] try to address them as quick as
+[2:54] possible. Um, and uh, and and namely, I
+[2:57] apologize if I forget to name the right
+[2:59] people or cite the right things. um
+[3:02] because I'll try to do my best, but uh
+[3:05] uh this is something that I may forget
+[3:07] off the top of my head. So, with that
+[3:09] all out of the way, um I think I'm going
+[3:11] to begin uh and talk about categories of
+[3:14] systems. So, before we're going to talk
+[3:16] about coupled dynamical systems, I'm
+[3:20] going to begin by talking about uh just
+[3:22] the category theory of dynamical systems
+[3:26] on its own. So, let's begin here. So,
+[3:33] excuse me.
+[3:36] Okay.
+[3:38] So,
+[3:40] uh let's see. So, a uh uh understanding
+[3:42] what like let's say a a lightning review
+[3:45] of categories.
+[3:55] So these notes are only going to really
+[3:57] make sense to you if you already have a
+[3:58] pretty solid background in category
+[4:00] theory. But nevertheless, I'm going to
+[4:02] start at the beginning and give a little
+[4:04] little uh talk about category theory
+[4:06] mostly so you can just understand how I
+[4:08] think about it and how I'm going to be
+[4:10] using it in these lectures. So in one
+[4:12] sense we might say the categories
+[4:16] uh are the abstract algebra
+[4:19] the abstract algebbras
+[4:25] of maps
+[4:28] or functions.
+[4:34] So
+[4:35] this is a a point we'll come to. So just
+[4:38] as a vector space is an abstract algebra
+[4:42] of vectors and a vector is defined as
+[4:44] something that you can take linear
+[4:46] combinations of a category is an
+[4:49] abstract algebra of maps or functions
+[4:53] and maps are defined to be things that
+[4:55] you can compose head to toe. So a
+[4:57] category consists of we have some class
+[5:01] of objects
+[5:03] objects
+[5:06] uh usually written in capital letters
+[5:08] like this and these are things like eg
+[5:12] I'll put over here eg will have the
+[5:15] category of sets
+[5:18] right and in that case they may be these
+[5:21] objects may be sets in general they'll
+[5:23] be mathematical structures though so we
+[5:25] may have instead something like groups
+[5:28] or we may have manifolds
+[5:30] or we may have graphs or we may have um
+[5:36] uh measurable spaces.
+[5:41] Okay. And then between those objects uh
+[5:44] which are mathematical structures we're
+[5:46] going to have um uh for any so this is C
+[5:50] a class of objects we'll call this ob
+[5:54] in objects
+[6:00] A and B in ob
+[6:04] uh uh generally a set of arrows here of
+[6:09] these things are maps of maps maps.
+[6:14] Um, and we often write uh a FFB for F C
+[6:21] A B. So now we can go through and say
+[6:26] here are the objects,
+[6:30] right? And then here are the maps.
+[6:33] And so in the first case we'll have
+[6:35] functions.
+[6:37] Maps between sets are just functions.
+[6:40] But in general, maps are going to have
+[6:41] to preserve the kind of structure that
+[6:43] the object we're going from is. So here
+[6:46] it will be homorphisms
+[6:49] because a structure preserving map of
+[6:51] groups is a homorphism. For manifolds,
+[6:53] we actually have to decide how how well
+[6:56] smooth are our manifolds. So if our
+[6:59] manifold is CN, then we'll take a CN
+[7:02] that is an n times continuously
+[7:04] differentiable functions between them.
+[7:07] Or we may take C infinity for smooth.
+[7:14] Right? So depending on what kind of
+[7:16] manifold you have, you would take that
+[7:18] kind of map. Uh if your manifold is
+[7:19] peacewise linear, you might for example
+[7:21] use peacewise linear maps. There's a
+[7:23] whole different bunch of things you
+[7:25] could choose here. Each one of them is
+[7:26] going to give a category.
+[7:28] I apologize if this is uh stuff you know
+[7:31] so well.
+[7:34] For graphs, there are things called
+[7:36] graph homorphisms
+[7:40] and uh I'll come to those later
+[7:44] because they're not that commonly known.
+[7:46] Many people know what a graph is. Graphs
+[7:47] are really central objects of study in
+[7:49] mathematics and in computer science, but
+[7:52] not many people express many things in
+[7:54] terms of their homorphisms. And um we'll
+[7:56] talk about how a lot of concepts are
+[7:59] represented by morphisms. So measurable
+[8:02] spaces, right? We we have a multiple
+[8:04] different notions of maps and also
+[8:06] there's maybe again just as we had
+[8:08] multiple different choices of maps uh
+[8:11] for manifolds giving us multiple
+[8:13] different categories all of whom had
+[8:14] objects manifolds perhaps um maybe
+[8:18] manifolds of a different kind of
+[8:19] smoothness class whatsoever but now we
+[8:22] can see that measurable spaces there are
+[8:23] two sort of natural notions of map we'll
+[8:25] see one of them is just measurable
+[8:27] functions
+[8:33] So measurable functions are functions
+[8:35] that uh that whose inverse image
+[8:36] preserves measurable sets. But then
+[8:38] another thing we'll see is also markup
+[8:40] kernels
+[8:44] and these are uh uh these are uh
+[8:49] uh uh not uh sort of understood as
+[8:54] functions just between the measurable
+[8:55] space but rather some more generalized
+[8:57] thing something that work looks a little
+[8:59] more like a relation. And we'll see that
+[9:01] often categories also have the uh the uh
+[9:04] structure that their that their
+[9:06] morphisms or maps uh look like can look
+[9:09] like relations between the objects,
+[9:11] right? And then we have um a very
+[9:13] special map called the identity map.
+[9:18] Okay. And that's always the uh I guess I
+[9:21] this is always the identity so I don't
+[9:22] really need to write it. So is the
+[9:25] identity
+[9:28] and the identity map uh is is uh always
+[9:32] the function that sends x to x
+[9:35] um if you're in a functional setting and
+[9:37] then we have composition. So for F in C
+[9:41] A B and
+[9:45] G in C B C we get
+[9:50] G after F in uh C A C here
+[9:58] and so this kind of composition in all
+[10:00] this case in all these cases here is
+[10:02] composition of maps and in this one it's
+[10:04] actually going to be some kind of
+[10:05] integral over the over over the kernel
+[10:09] So it in justice is composition
+[10:11] composition composition composition
+[10:13] composition but uh it can be anything
+[10:16] that satisfies sort of the uh the laws
+[10:19] we're going to give. So the laws are
+[10:22] just unity
+[10:24] which says that f after ID equals f and
+[10:28] ID after f equals f where that identity
+[10:32] is the appropriate one. So um this is it
+[10:35] A and this is it B and associativity
+[10:39] after G after H is equal to F after G
+[10:44] after H. All right. So these are easily
+[10:47] verified for uh functions between sets
+[10:50] and for that reason also between
+[10:52] functions of these other sorts. Um but
+[10:55] it is an important constraint that
+[10:56] actually does end up constraining what
+[10:58] can be a category. But the main point is
+[11:00] that a category is an abstract algebra
+[11:03] of these maps. And uh and for that
+[11:06] reason, anything that satisfies these
+[11:08] axioms can be a category.
+[11:11] I promise I'm not going to do a full
+[11:13] introduction to categories, but I'm
+[11:15] going to say one other thing that a
+[11:16] category can be. So categories
+[11:20] or maybe I should say category theory,
+[11:23] which is a little broader than
+[11:24] categories, is the abstract algebra
+[11:32] of concepts.
+[11:37] So a category itself is an abstract
+[11:40] algebra of maps and it has a very
+[11:42] precise definition. Category theory
+[11:44] doesn't have such a precise definition
+[11:46] like mathematics. It's best defined as
+[11:48] that which category theorists study. But
+[11:51] I want to define it as the abstract
+[11:53] algebra of of mathematical concepts. And
+[11:57] uh what this means is uh it's going to
+[12:00] depend on what the word concept means
+[12:01] but often that means mathematical
+[12:03] structure. Um and uh what we'll see is
+[12:07] that many concepts in mathematics can be
+[12:09] expressed as certain mathematical
+[12:10] structures. Those they can also be
+[12:12] expressed as sort of uh uh structures
+[12:15] that are computed out of other
+[12:17] structures. And we'll often see that the
+[12:20] elements of those structures that are
+[12:22] computed out of other structures
+[12:23] themselves can be defined as maps of a
+[12:26] certain kind. And so this is the most
+[12:28] thing the most important thing is that
+[12:30] sort of a a concept can generally be
+[12:33] defined. So um so like you know note
+[12:37] like idea
+[12:39] idea is that a concept
+[12:43] that's a mathematical concept um can be
+[12:46] expressed
+[12:51] uh as an arrangement
+[12:56] of maps.
+[12:57] That's sort of the fundamental idea in
+[12:59] category theory. And because it's the
+[13:02] abstract algebra of concepts, we can
+[13:03] we're going to be able to do things. So
+[13:06] we'll be able to
+[13:08] able to combine
+[13:14] combine also known as compose
+[13:18] concepts
+[13:21] and there'll be multiple different ways
+[13:22] we can do this and they are determined
+[13:25] by the above idea. We're going to
+[13:27] determine them through um through
+[13:30] universal properties.
+[13:32] All right. So this is rather vague, but
+[13:35] that's just again this is more of a
+[13:36] position than a than an actual
+[13:39] introduction to the field. Uh
+[13:42] okay, maybe I should put some
+[13:44] introductions. We'll probably throw some
+[13:46] introductions up in the uh up in the um
+[13:49] description.
+[13:50] Okay.
+[13:52] So, uh the fundamental idea, so
+[13:55] fundamental notions
+[14:01] in category theory.
+[14:08] So, uh so we're going to say one uh
+[14:11] universal properties
+[14:16] and two is representability.
+[14:21] ability which always means by maps. So
+[14:25] this latter thing is essentially one of
+[14:27] the is one of the ideas that concepts in
+[14:29] in category theory are generally
+[14:30] represented by arrangements of maps. And
+[14:33] this is going to be really important.
+[14:35] Both of these are going to be really
+[14:36] important for us when we when we come to
+[14:38] systems uh systems because we'll see
+[14:41] that systems are mathematical structures
+[14:43] and we're going to be looking at the
+[14:45] ways that we can study the behavior of
+[14:47] systems and we'll see that in many cases
+[14:50] the behaviors of systems are
+[14:52] representable by maps between systems.
+[14:55] There also other interesting uh uh
+[14:57] things we want to understand about
+[14:58] systems that can be represented by maps
+[15:01] um such as uh uh coarse grains of
+[15:04] systems um uh various stability
+[15:07] properties that are proven by leopod
+[15:09] functions. Those are special kinds of
+[15:11] structure preserving functions of
+[15:12] systems and we'll come to some of those
+[15:15] in this in this first lecture.
+[15:18] Um and then we'll also be combining,
+[15:20] coupling, composing um systems
+[15:23] themselves. And we'll do that most often
+[15:27] using techniques that are well defined
+[15:29] by universal properties or constructions
+[15:31] that are well defined by universal
+[15:32] properties.
+[15:37] Okay. So uh as uh there's a sense in
+[15:42] which that two is a special case or one
+[15:44] is a special case of two.
+[15:46] Um there's also a sense in which two is
+[15:49] a special case of one, but that's that's
+[15:52] true of every concept in category
+[15:53] theory. Um everything is everything
+[15:55] else. So I'm actually going to talk
+[15:58] about representability first. So let's
+[16:01] fix um
+[16:04] let's fix uh C to be the category of
+[16:08] sets and functions.
+[16:10] Okay. So now I want to consider uh a a
+[16:16] um
+[16:17] a a concept that we can define out of a
+[16:21] set. So given a set we can consider its
+[16:26] elements or how about I do maybe I
+[16:29] should do
+[16:32] yeah I'll do I'll start with elements.
+[16:34] So given us
+[16:37] a set X,
+[16:41] we can represent
+[16:45] I can represent its elements
+[16:49] as maps.
+[16:52] How do we do that? Well, if I have an x
+[16:55] in x, then I can make a function
+[16:59] which I'll also well maybe for now I'll
+[17:01] just put a little name brackets around
+[17:03] it. A function from some one element
+[17:05] set. It doesn't matter what the element
+[17:07] of that set is. And this function is
+[17:09] defined by um sending that unique
+[17:12] element of that domain set to be the
+[17:16] element I have. And now this is a this
+[17:19] actually gives us a bjection. we have a
+[17:21] bjection
+[17:23] x is bjective with the functions from
+[17:27] this one element set to x.
+[17:32] And so in this case we say that the set
+[17:35] of elements
+[17:38] are representable
+[17:41] oh covariantly
+[17:45] by
+[17:49] this single element set. In other words
+[17:52] functions out of that single element set
+[17:54] into a set correspond to elements of
+[17:57] that set.
+[17:59] Now we can also represent pairs
+[18:05] pairs
+[18:07] um of uh elements in x. So we would have
+[18:11] something like x1
+[18:14] which is a pair of elements right
+[18:19] correspond to
+[18:22] uh pairs of functions. That's right. But
+[18:25] they also correspond to single functions
+[18:28] which I'll I guess I'll also write this
+[18:30] using X for the pair
+[18:33] from a two element set now 0 one.
+[18:38] So in fact maybe doesn't get quotes
+[18:41] maybe this one gets a little like
+[18:43] subscript here where I send zero to X0
+[18:47] and I send one
+[18:49] to X1.
+[18:53] So again we have this thing here which
+[18:56] is that the set of pairs of elements in
+[19:00] X are bjective with the set of functions
+[19:05] from this particular special set 01 into
+[19:08] X. And you can see this this this set
+[19:12] here right is the
+[19:16] uh the set that just has a pair of
+[19:18] elements in it. It is a set freely
+[19:20] defined by a pair. We sometimes call
+[19:22] this the walking pair
+[19:27] pair and this one's the walking element.
+[19:32] And I think the story goes that there
+[19:33] was some category theorist who had huge
+[19:35] bushy eyebrows and the joke was that uh
+[19:37] he w he was just the walking pair of
+[19:39] eyebrows. Um and this is how that
+[19:42] terminology arose.
+[19:46] Okay. Similarly, sequences
+[19:51] x knot x1 x2 dot dot dot infinite
+[19:55] sequences correspond to maps
+[20:01] x dash from the natural numbers
+[20:06] into x.
+[20:08] And we'll revisit this. We'll revisit
+[20:11] this later. Okay. And I'm
+[20:15] uh I'm at danger of just giving an
+[20:16] introduction to category theory here. So
+[20:19] um
+[20:21] this is the uh
+[20:24] this is the sort of important idea. I'm
+[20:27] I'm going to uh sort of assume you know
+[20:30] all of this going forward very rapidly.
+[20:32] The main point to understand is that
+[20:34] there are certain concepts we can
+[20:35] express about sets that we can also
+[20:37] represent by special sets.
+[20:40] Um so now uh I'll just do coariant ones.
+[20:45] So now let's consider discrete time
+[20:47] dynamical systems.
+[20:49] Discrete time
+[20:51] discrete space
+[20:55] dynamical systems.
+[21:00] That is a very very fancy way to say def
+[21:06] that thing is a function
+[21:11] f
+[21:13] x to x
+[21:15] of sets.
+[21:18] So we call x is or how about um
+[21:22] standardize my terminology quick s to s
+[21:25] we call s the set
+[21:28] of states.
+[21:32] Uh let me
+[21:35] I'm going to wish I did this later. So
+[21:37] excuse me for a second. You and we'll
+[21:40] call you uh the dynamics
+[21:44] mix or update function.
+[21:49] Right. Okay. So, uh I'm not really great
+[21:53] with examples and I and like I said, I
+[21:55] didn't really specifically prep. So I'm
+[21:57] not going to give you too many examples
+[21:59] of these, but we might um uh uh we might
+[22:03] um
+[22:06] uh the idea is that the set of states
+[22:09] tells us how things might be and this uh
+[22:12] uh function u takes the current way that
+[22:15] things are and tells us the next way
+[22:17] that this are. So these are discrete
+[22:19] time discrete space deterministic
+[22:26] dynamical systems. Okay. So let's define
+[22:28] the category of these things. So the
+[22:30] category so def the category
+[22:37] of dot dot dots I'm not going to write
+[22:40] them discretet time discrete space
+[22:41] discrete deterministic dynamical
+[22:42] systems. you've seen them up the top
+[22:46] is well we might write it as set to the
+[22:50] little uh uh thing here. It has its
+[22:54] objects are
+[22:57] are the systems. So they're like u S to
+[23:01] S
+[23:03] and then its maps are are squares F S1 S
+[23:09] not to S1
+[23:11] such that the following square commutes
+[23:21] one
+[23:29] Okay. So what does this square commuting
+[23:31] mean? I.e.
+[23:33] for all snot in snot we have an equation
+[23:38] f of u of of u of snot is equal to u1 of
+[23:46] f of snot. Or in other words, if we take
+[23:51] any state in the uh beginning system
+[23:55] um and we go to the next state and then
+[23:59] we apply the function f that's the same
+[24:02] thing as first applying the function and
+[24:04] then updating it in the target. So we
+[24:07] say that uh f preserves the dynamics and
+[24:11] uh as in the case in in in general in
+[24:13] category theory most things come down to
+[24:15] these universally quantified equations.
+[24:18] um and uh uh which are expressed by
+[24:21] these arrangements of um functions.
+[24:24] Okay. So
+[24:27] right so now um let's consider an
+[24:31] important feature of this. So like
+[24:33] definition
+[24:35] uh
+[24:37] so a uh trajectory
+[24:42] of uh this system is a sequence
+[24:49] It's not s1 dot dot dot of states.
+[24:55] So that
+[24:58] s n + one is equal to u of sn.
+[25:03] In other words, it's a it's a sequence
+[25:05] of states, right? where where each of
+[25:07] the following one uh the the the m plus
+[25:11] first is is is defined by uh taking the
+[25:15] nth and applying the dynamics. So this
+[25:17] is like what how the system behaves is
+[25:21] by going through such a sequence of
+[25:23] states starting from snot. Now you can
+[25:25] also see sort of by the principle of
+[25:26] induction that such a sequence of states
+[25:29] is determined by what snot is. That's
+[25:32] the base case and then we have this
+[25:33] inductive definition here which just
+[25:35] determines it. But we'll also be able to
+[25:38] prove a little nice theorem. So maybe
+[25:41] I'll say this. So the the trajectory
+[25:43] we'll call it trage gives a funer
+[25:47] set
+[25:49] to set.
+[25:50] And what it means to be a funer is is uh
+[25:54] that if I have um a uh so suppose I have
+[25:59] such a system u kn
+[26:03] right then I send it to the set of
+[26:05] trajectories
+[26:07] of u knot defined as the set of all
+[26:10] things up there and then if I have one
+[26:13] of these fs here
+[26:18] du1 well this thing also goes to the
+[26:20] trajectories
+[26:23] and then it being a funer means I get
+[26:25] something called tra f which uh is a
+[26:28] function that takes a trajectory of you
+[26:30] not and takes a and gives us a
+[26:32] trajectory of u1 and what is it well if
+[26:34] I have this trajectory of u knot
+[26:39] I just apply f to each part
+[26:47] and it's not obvious that this satisfies
+[26:49] the important relation Right? We need to
+[26:51] check so we need to check that this is
+[26:53] actually a trajectory. So if we take u1
+[26:57] applied to f of sn right we need to show
+[27:02] that that equals f of sn plus one
+[27:05] because that's how we define the
+[27:06] sequence. Well we do know this defining
+[27:10] property.
+[27:13] So we can pull the f out of here
+[27:17] and then we can use the definition of it
+[27:20] being a trajectory in the first place of
+[27:22] of the SNS being a trajectory in the
+[27:24] first place to see that it equals f plus
+[27:27] one and that is what we wanted. So uh
+[27:30] this is what it means to be a funer.
+[27:32] It's a homorphism of categories, right?
+[27:35] Okay. So this funer is representable
+[27:39] theorem trage
+[27:42] is representable
+[27:46] by the dynamical system the system
+[27:50] plus one from the natural numbers to the
+[27:53] natural numbers.
+[27:55] Right? So why? Well, as we saw a
+[27:57] sequence of states. So s dot dot dot dot
+[28:02] corresponds to
+[28:05] to n s to s right where this is you know
+[28:11] we put it in the index here and that
+[28:15] equation here this defining equation
+[28:24] corresponds to this square
+[28:35] because this square
+[28:37] says for all n in n
+[28:43] u of sn is equal to s n + one.
+[28:49] Okay.
+[28:50] So what we've seen here is that this
+[28:52] notion of trajectory of the system which
+[28:54] is a sequence of states that updates
+[28:56] according to the law is representable by
+[28:58] a special simple system. Um, in fact to
+[29:02] say that this is so is essentially a way
+[29:05] of defining the natural numbers in
+[29:07] category theory because this is a this
+[29:09] is an expression of the principle of
+[29:11] induction
+[29:12] saying that uh uh
+[29:18] well at least if I if I if I tell you
+[29:20] that uh this is determined by what uh
+[29:25] what s not is blow my nose.
+[29:31] Okay. So one thing to note is that um
+[29:35] here right we've uh uh
+[29:40] we have taken a discrete time discrete
+[29:44] space deterministic dynamical systems.
+[29:46] They're defined like this. And we've
+[29:48] shown that the trajectories are a
+[29:49] sequence of states uh that are
+[29:51] representable in this way. Now one thing
+[29:53] I'll note is that by sort of if we
+[29:56] wanted to uh change some features of
+[29:58] this we can change them quite slickly
+[30:01] because as you can see most of this was
+[30:02] expressed in the abstract language of
+[30:04] category theory. So if I wanted to say
+[30:06] like discrete time but continuous space,
+[30:12] right? Then instead of saying that it's
+[30:14] a set here, I would say that it's say a
+[30:16] topological space
+[30:21] and that all of this now takes place in
+[30:24] the category of topological spaces and
+[30:27] continuous functions. Or maybe I want it
+[30:29] to be smooth. Then I take the category
+[30:31] of smooth of manifolds and smooth
+[30:33] functions. Or maybe I just want it to be
+[30:35] measurable. Very common assumption in in
+[30:38] dynamical systems. And then I would take
+[30:40] the category of measurable spaces and
+[30:42] measurable functions. So I can update I
+[30:44] can do all that. But I can also do
+[30:46] something like take you to be something
+[30:49] else. Um so uh again I can't give a full
+[30:52] introduction to all category theory here
+[30:55] but um maybe I'll maybe I'll do uh
+[31:00] just one. Um but even in all those cases
+[31:04] we can see that we can usually find the
+[31:05] natural numbers as some kind of object
+[31:07] and then find that discrete time
+[31:09] trajectories are representable in this
+[31:11] way.
+[31:13] Okay.
+[31:15] So that's right. So now I'm going to
+[31:18] come to uh show you that
+[31:19] representability is not just about the
+[31:21] discrete time case but also in other
+[31:23] things. So now we'll do systems of of
+[31:27] odes.
+[31:31] So a system of odes is pretty much the
+[31:35] uh
+[31:37] the most common way to present a
+[31:40] dynamical system in the sciences. So
+[31:42] it's very central and so a system of
+[31:45] odes is a system of differential
+[31:47] equations of this form.
+[32:04] where we have uh n uh n state variables
+[32:09] s1 dot dot dot sn and we have uh we set
+[32:13] them equal to n functions of themselves.
+[32:15] So this is a
+[32:17] as it's expressed here this is an
+[32:19] autonomous system of odes. Usually OD's
+[32:21] can have parameters. For now, we're not
+[32:23] going to talk about parameterized OD's.
+[32:24] We'll come to that later when we talk
+[32:26] about coupling of systems, right? But
+[32:28] the thing I want you to note is we can
+[32:30] write this as just one vector notate. If
+[32:32] we take a whole vector uh S is a whole
+[32:35] vector. So this is each SI is in R. If
+[32:39] we take S to be the whole vector, we can
+[32:41] take uh S in Rn and then set that equal
+[32:45] to a whole vector equation. Just uh I
+[32:48] guess it's like this.
+[32:51] like that and then I will never again
+[32:54] write that little vector notation. Uh
+[32:57] so here right let's let's look at this
+[32:59] and think what is the quote unquote type
+[33:03] signature of this. So this is a function
+[33:05] here. Well simply put it's a function
+[33:08] from Rn to RN.
+[33:10] But that's actually a little bit
+[33:14] that's that's true if we're just
+[33:16] thinking about these as numbers. But
+[33:18] it's a it's it's important to note that
+[33:20] the left hand side of this equation
+[33:22] tells us that U of S is not really the
+[33:25] same kind of thing as S because S's are
+[33:28] points. So these things are points
+[33:32] and these things here are vectors
+[33:34] tangent vectors in particular because
+[33:36] the derivatives
+[33:39] uh form tangent vectors. So really we
+[33:42] should think of it instead as we have
+[33:45] the tangent bundle of Rn which of course
+[33:48] is equal to Rn * Rn.
+[33:51] So where these are points and these are
+[33:54] vectors
+[33:57] bundled over Rn which is the points
+[34:02] and this here is the first projection
+[34:05] and this here is just called pi.
+[34:08] And then now we can understand what u
+[34:10] is. U is a function that goes like this
+[34:14] such that pi u equals in r n. In other
+[34:19] words, u sends uh uh s to a tangent
+[34:24] vector 2 s. Now of course in rn this is
+[34:28] kind of overly beling the point. Um but
+[34:32] this gives us a nice coordinate free way
+[34:33] to write these if we have kinematical
+[34:36] constraints. Because if we have
+[34:37] kinematical constraints like extra
+[34:40] equations floating around which are not
+[34:42] represented by the tangent by the by the
+[34:44] uh these differential equations then
+[34:46] they describe a manifold embedded in Rn
+[34:50] right so we might have for example s
+[34:53] here embedded in Rn say because s is
+[34:57] equal to the set of all s's such that
+[35:01] some kinematical constraints
+[35:05] which are expressed in terms and say the
+[35:07] vanishing of a bunch of smooth functions
+[35:12] and then we can then the tangent bundle
+[35:16] here really could be non-trivial right
+[35:19] it could for example
+[35:21] in there is really the the the planes
+[35:24] over every point s it's the plane which
+[35:27] is tangent to that point in Rn
+[35:30] and so it might actually vary for
+[35:32] example if s there was a sphere right
+[35:36] and so That's expressing a certain
+[35:37] kinematical constraint saying that all
+[35:39] the points we're going to all our states
+[35:41] are going to be points on this sphere no
+[35:42] matter what the OD says. We're always
+[35:45] going to stay on the sphere and we can
+[35:46] ensure that by saying that that the OD
+[35:49] that the uh the the the derivatives all
+[35:52] land tangent to the sphere always then
+[35:55] we'll always stay on the sphere as we
+[35:57] flow along our OD. So this general
+[36:00] formulation allows us to add kinematical
+[36:02] constraints to our system of ODEs. I'm
+[36:05] not going to go into that, but the point
+[36:06] is that um that it's it's sort of going
+[36:09] to end up being the right way to think
+[36:11] about to think about these systems.
+[36:14] Okay, so deaf
+[36:17] well a system of ODEs
+[36:22] is equivalently is a vector field
+[36:30] on a smooth manifold or on a manifold.
+[36:33] I'm going to assume everything is
+[36:34] smooth. That's of course not necessary
+[36:36] to assume, but I'm not going to get
+[36:38] bogged down in analytical details here.
+[36:40] So what is that? Well, we have uh a
+[36:44] manifold S with its tangent bundle and
+[36:47] then we have U which is a section of the
+[36:49] bundle
+[36:55] and again the different this the actual
+[36:57] differential equation itself. So the OD
+[37:00] itself
+[37:03] is dsdt
+[37:06] equals us.
+[37:11] Okay.
+[37:13] So, um right. Okay. So, now let's uh uh
+[37:19] uh see what a map of uh so deaf
+[37:23] amorphism
+[37:25] a map of of odes.
+[37:29] So if you're a category theorist, you'll
+[37:32] know what I mean when I say it's a map
+[37:34] such that the obvious squares can be. So
+[37:37] this is one of the fun things about
+[37:38] category theory is knowing after a
+[37:40] little while what it means. If you give
+[37:42] a definition of an object, it usually
+[37:45] implicitly comes with a definition of
+[37:47] the morphism by sort of letting
+[37:49] everything in that definition vary
+[37:51] according to its natural variance. Um,
+[37:55] in this case, we're going to say that
+[37:57] it's a map f S to S1
+[38:02] that makes the following diagram
+[38:04] commute, which will look a in a way a
+[38:08] lot like
+[38:11] the one we saw in the screen time case.
+[38:21] Now, uh, technically we should also add
+[38:24] the quote unquote obvious diagram that
+[38:26] this commutes with, um, that this
+[38:29] commutes with, uh, uh, the pi, but that
+[38:31] follows for free, so we don't need to
+[38:34] add it. And TF here, TF
+[38:37] is the derivative is the is the push
+[38:39] forward
+[38:43] of vectors. So what does that mean for
+[38:46] RNs which we're really thinking about
+[38:48] it? Well, in the RN case we have Rn * Rn
+[38:52] and then maybe RM * RM
+[38:57] we have RN
+[38:59] we have our U1 UN we have our U1 we have
+[39:03] RM and we have F here. And then here
+[39:07] right we have uh we're going to take a a
+[39:11] point here P and a vector V and we're
+[39:14] going to give a point and a vector
+[39:17] and that point here is going to be FP.
+[39:20] But then what we're going to give is the
+[39:22] directional derivative in the direction
+[39:24] of V of F at P. Um
+[39:32] what even is the notation for that? It's
+[39:34] something like DV
+[39:36] at P of F.
+[39:39] Is that something like that?
+[39:42] So this is what TF is.
+[39:47] And so uh that's going to be our
+[39:48] definition of map. Um so T is anam
+[39:52] another example of a funer. Um uh and
+[39:55] this is how it acts on on maps. Okay. So
+[39:59] now um we'll see that uh what so a
+[40:02] trajectory
+[40:08] uh is going to be is uh a curve
+[40:14] is a well let me just call it like this
+[40:15] is a solution
+[40:19] to the OD.
+[40:22] So if you look at the OD right remember
+[40:24] that it expressed this equation
+[40:28] the U expressed this equation and that
+[40:30] equation has something kind of important
+[40:32] in it which is it has this t which was
+[40:34] unexplained.
+[40:36] So what a solution is if we are careful
+[40:39] about it is it's an s which is a
+[40:42] function uh at least differentiable
+[40:44] function from r to s where we think of
+[40:48] it as a function of the variable t
+[40:54] s of t and then so such that
+[41:00] so that the function actually satisfies
+[41:02] this equation um for all times t. Let me
+[41:05] put t in there
+[41:08] some t
+[41:11] right and so now we'll come to our
+[41:13] theorem here which is that trajectories
+[41:18] of odes
+[41:22] are representable
+[41:25] by the single od
+[41:29] dt
+[41:30] dt = 1 time flows at unit rate which is
+[41:35] actually
+[41:38] the OD constant one or really because
+[41:42] this is equal to R cross R
+[41:45] this is T maps to T comma 1.
+[41:51] Um so maps from that into S are going to
+[41:55] be precisely
+[42:01] precisely that equation up there. So
+[42:02] again we see that the notion of solution
+[42:05] to an OD is representable and uh we'll
+[42:09] pick this up next time um seeing more
+[42:12] examples of representability um before
+[42:15] uh eventually coming to uh consider the
+[42:19] coupling um and composition of systems.
