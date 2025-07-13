@@ -11,12 +11,16 @@ And uh this is going to be the inaugural lecture of a series um on uh the compos
 
 So, before we're going to talk about coupled dynamical systems, I'm going to begin by talking about uh just the category theory of dynamical systems on its own. So, let's begin here. So, excuse me.
 
+**[3:36]**
+
 Okay. So, uh let's see. So, a uh uh understanding what like let's say a a lightning review of categories.
+
+**[3:55]**
 
 So these notes are only going to really make sense to you if you already have a pretty solid background in category theory. But nevertheless, I'm going to start at the beginning and give a little little uh talk about category theory mostly so you can just understand how I think about it and how I'm going to be using it in these lectures.
 
 ## Categories as Abstract Algebra of Maps
-**[4:12]**
+**[4:10]**
 
 So in one sense we might say the categories are the abstract algebra the abstract algebras of maps or functions.
 
@@ -291,3 +295,40 @@ We have $\mathbb{R}^n$, we have $\mathbb{R}^m$ and we have $F$ here. And then he
 $$TF(p,v) = (F(p), D_v F|_p)$$
 
 So this is what $TF$ is. And so that's going to be our definition of map. $T$ is another example of a functor and this is how it acts on maps.
+
+### Trajectories of ODEs
+**[39:59]**
+
+So now we'll see that a **trajectory** is going to be a **curve**, or let me just call it a **solution** to the ODE.
+
+If you look at the ODE, remember that it expressed this equation:
+
+$$\frac{dS}{dt} = U(S)$$
+
+The $U$ expressed this equation and that equation has something kind of important in it which is it has this $t$ which was unexplained.
+
+So what a solution is, if we are careful about it, is it's an $s$ which is a function - at least differentiable function from $\mathbb{R}$ to $S$ where we think of it as a function of the variable $t$:
+
+$$s(t)$$
+
+such that the function actually satisfies this equation for all times $t$:
+
+$$\frac{ds}{dt}(t) = U(s(t))$$
+
+## Representability of ODE Trajectories
+**[41:11]**
+
+And so now we'll come to our theorem here which is that **trajectories of ODEs are representable by the single ODE**:
+
+$$\frac{dt}{dt} = 1$$
+
+Time flows at unit rate, which is actually the ODE with constant $1$. Or really, because this is equal to $\mathbb{R} \times \mathbb{R}$, this is:
+
+$$t \mapsto (t, 1)$$
+
+So maps from that into $S$ are going to be precisely that equation up there. So again we see that the notion of solution to an ODE is representable.
+
+## Conclusion
+**[42:02]**
+
+And we'll pick this up next time, seeing more examples of representability before eventually coming to consider the coupling and composition of systems.
