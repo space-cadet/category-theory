@@ -1,19 +1,20 @@
 # Session Cache
-*Last Updated: 2025-09-22 12:47:56 IST*
+*Last Updated: 2025-09-22 13:11:04 IST*
 
 ## Current Session
 **Started**: 2025-09-22 12:30:00 IST
-**Focus Task**: T3a - Milewski CTFP Book Chapter Extraction
+**Focus Task**: T3b - PDF Text Extraction Using CLI
 **Session File**: `sessions/2025-09-22-afternoon.md`
 
 ## Overview
-- Active: 1 | Paused: 0 | Completed: 5
+- Active: 2 | Paused: 0 | Completed: 5
 - Last Session: Afternoon session
 - Current Period: afternoon
 
 ## Task Registry
 - T3: Category Theory Documentation and Resource Collection - 🔄 IN PROGRESS
 - T3a: Milewski CTFP Book Chapter Extraction - ✅ COMPLETED
+- T3b: PDF Text Extraction Using CLI - 🔄 IN PROGRESS
 - T2: Knowledge Graph Generation System - ✅ COMPLETED
 - T1: Getting Started with Haskell - ✅ COMPLETED
 - V2: DOTS Lectures 2 Video Processing - ✅ COMPLETED
@@ -47,6 +48,19 @@
 3. ✅ Extracted end matter from logical page 474 to end
 4. ✅ Verified all 32 files created successfully
 5. ✅ Updated workflow documentation with enhancements
+
+### T3b: PDF Text Extraction Using CLI
+**Status:** 🔄 IN PROGRESS **Priority:** HIGH
+**Started:** 2025-09-22 13:00:00 IST **Last**: 2025-09-22 13:11:04 IST
+**Context**: Set up tools for structured text extraction with LaTeX math preservation
+**Files**: `memory-bank/implementation-details/pdf-cli-content-extraction.md`, `pix2text-env/`, `tasks/T3b.md`
+**Progress**:
+1. ✅ Researched and compared PDF extraction tools (pdftotext, pdfplumber, Mathpix, Pix2Text)
+2. ✅ Set up Pix2Text using UV virtual environment
+3. ✅ Created comprehensive documentation of tools and setup process
+4. 🔄 Troubleshooting CLI command syntax issues
+5. ⬜ Extract first 20 pages for quality testing
+6. ⬜ Full document extraction if quality acceptable
 
 ## Completed Tasks
 ### T2: Knowledge Graph Generation System

@@ -1,11 +1,12 @@
 # Task Registry
-*Last Updated: 2025-09-22 12:47:56 IST*
+*Last Updated: 2025-09-22 13:11:04 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies |
 |----|-------|--------|----------|---------|--------------|
 | T3 | Category Theory Documentation and Resource Collection | 🔄 | HIGH | 2025-09-21 | - |
 | T3a | Milewski CTFP Book Chapter Extraction | ✅ | HIGH | 2025-09-22 | T3 |
+| T3b | PDF Text Extraction Using CLI | 🔄 | HIGH | 2025-09-22 | T3 |
 
 ## Task Details
 
@@ -20,6 +21,12 @@
 **Status**: ✅ COMPLETED **Last**: 2025-09-22 12:47:56 IST
 **Files**: `docs/CTFP/Chapter_*.pdf`, `docs/CTFP/End_Matter.pdf`
 **Notes**: Successfully extracted complete 498-page book into 32 individual PDF files using qpdf workflow
+
+### T3b: PDF Text Extraction Using CLI
+**Description**: Extract structured text content from Category Theory PDF using CLI tools while preserving mathematical expressions
+**Status**: 🔄 IN PROGRESS **Last**: 2025-09-22 13:11:04 IST
+**Files**: `memory-bank/implementation-details/pdf-cli-content-extraction.md`, `pix2text-env/`
+**Notes**: Set up Pix2Text tool for structured extraction with LaTeX math support, troubleshooting CLI syntax
 
 ### T2: Knowledge Graph Generation System
 **Description**: Complete automated knowledge graph generator for category theory documents using spaCy NLP and NetworkX

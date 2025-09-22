@@ -1,5 +1,6 @@
 # Session 2025-09-22 - afternoon
 *Created: 2025-09-22 12:47:56 IST*
+*Last Updated: 2025-09-22 13:11:04 IST*
 
 ## Focus Task
 T3a: Milewski CTFP Book Chapter Extraction
@@ -34,7 +35,26 @@ T3a: Milewski CTFP Book Chapter Extraction
 ## Context for Next Session
 Task T3a is now complete. The entire CTFP book has been successfully broken down into manageable individual chapter files for easier study and reference. This supports the broader T3 task of comprehensive category theory resource collection.
 
+### T3b: PDF Text Extraction Using CLI
+**Priority**: HIGH
+**Progress Made**:
+- Researched and compared PDF text extraction tools including pdftotext, pdfplumber, Mathpix, Pix2Text
+- Evaluated tools for preserving mathematical expressions and document structure
+- Set up Pix2Text as open-source alternative to Mathpix using UV virtual environment
+- Created comprehensive documentation in pdf-cli-content-extraction.md
+- Encountered CLI syntax issues with p2t command requiring -i flag
+**Status Change**: ⬜ NEW → 🔄 IN PROGRESS
+
+## Additional Files Modified
+- `memory-bank/implementation-details/pdf-cli-content-extraction.md` - Created comprehensive tool comparison and setup documentation
+- `pix2text-env/` - Created UV virtual environment for Pix2Text
+- `memory-bank/tasks/T3b.md` - Created individual task file for PDF text extraction
+
+## Updated Context for Next Session
+Completed T3a chapter extraction and started T3b for text extraction from PDF content. Pix2Text tool is set up but needs CLI syntax debugging to properly extract structured text with mathematical expressions.
+
 ## Next Session Priorities
-1. Continue with T3 task - potentially organize or analyze the extracted chapter content
-2. Consider creating study guides or summaries from individual chapters
-3. Explore integration with knowledge graph system for chapter content
+1. Debug Pix2Text CLI syntax errors and test extraction on first 20 pages
+2. Evaluate extraction quality and mathematical formula preservation
+3. Complete full document extraction if quality is acceptable
+4. Continue with T3 task organization and analysis

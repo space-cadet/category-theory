@@ -1,8 +1,15 @@
 # Edit History
 *Created: 2025-07-13 23:05:04 IST*
-*Last Updated: 2025-09-22 12:06:20 IST*
+*Last Updated: 2025-09-22 13:11:04 IST*
 
 ### 2025-09-22
+
+#### 13:11 - T3b: PDF Text Extraction Using CLI Setup
+- Created `memory-bank/tasks/T3b.md` - Individual task file for PDF text extraction with CLI tools documentation
+- Updated `memory-bank/tasks.md` - Added T3b task to registry and updated master timestamp
+- Updated `memory-bank/sessions/2025-09-22-afternoon.md` - Extended session with T3b work including tool research and setup
+- Updated `memory-bank/session_cache.md` - Added T3b to active tasks with progress tracking and current focus
+- Created `memory-bank/implementation-details/pdf-cli-content-extraction.md` - Comprehensive documentation of PDF extraction tools comparison and Pix2Text setup
 
 #### 12:47 - T3a: CTFP Book Chapter Extraction Complete
 - Created `docs/CTFP/Chapter_01_Category_The_Essence_of_Composition.pdf` through `Chapter_31_Monads_Monoids_and_Categories.pdf` - All 31 individual CTFP chapter PDF files extracted using qpdf
