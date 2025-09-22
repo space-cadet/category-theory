@@ -1,18 +1,25 @@
 # Task Registry
-*Last Updated: 2025-09-22 12:06:20 IST*
+*Last Updated: 2025-09-22 12:47:56 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies |
 |----|-------|--------|----------|---------|--------------|
 | T3 | Category Theory Documentation and Resource Collection | 🔄 | HIGH | 2025-09-21 | - |
+| T3a | Milewski CTFP Book Chapter Extraction | ✅ | HIGH | 2025-09-22 | T3 |
 
 ## Task Details
 
 ### T3: Category Theory Documentation and Resource Collection
 **Description**: Comprehensive collection and curation of category theory educational resources including Bartosz Milewski's CTFP book and specialized topic documentation
-**Status**: 🔄 IN PROGRESS **Last**: 2025-09-22 12:06:20 IST
+**Status**: 🔄 IN PROGRESS **Last**: 2025-09-22 12:47:56 IST
 **Files**: `docs/CTFP/`, `docs/*.md`, `.windsurf/workflows/format-as-md.md`
 **Notes**: Added CTFP book plus 22 specialized docs including foundational materials from typora-notes
+
+### T3a: Milewski CTFP Book Chapter Extraction
+**Description**: Extract all 31 chapters and end matter from Bartosz Milewski's CTFP PDF into individual files
+**Status**: ✅ COMPLETED **Last**: 2025-09-22 12:47:56 IST
+**Files**: `docs/CTFP/Chapter_*.pdf`, `docs/CTFP/End_Matter.pdf`
+**Notes**: Successfully extracted complete 498-page book into 32 individual PDF files using qpdf workflow
 
 ### T2: Knowledge Graph Generation System
 **Description**: Complete automated knowledge graph generator for category theory documents using spaCy NLP and NetworkX
