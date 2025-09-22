@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "."
+		},
+		{
+			"path": "../../../../Volumes/Data/owncloud/Notes/typora-notes"
 		}
 	],
 	"settings": {}
